@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Recipes</title>
-        <!-- favicon -->
-        <link rel="icon" href="logoused.ico" type="image/x-icon">
-        <!-- style -->
-        <link rel="stylesheet" href="./styles/reset.css">
-        <link rel="stylesheet" href="./styles/home.css">
-        <link rel="stylesheet" href="./styles/recipes.css">
-        <!-- font awesome -->
-        <script src="https://kit.fontawesome.com/a24ea374e8.js" crossorigin="anonymous"></script>
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-       <style>
-           body{
-               background-color: black;
-           }
-           .to-be-changed {
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <!-- favicon -->
+    <link rel="icon" href="logoused.ico" type="image/x-icon">
+    <!-- style -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/recipes.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a24ea374e8.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .to-be-changed {
             color: #32170567;
             background-color: #32170567;
             border: none;
@@ -31,6 +33,7 @@
 
             transition: 0.9s;
         }
+
         .to-be-changed:hover {
             color: #32170567;
             border: none;
@@ -39,16 +42,16 @@
 
         }
 
-.to-be-changed {
-    background-color: #fcbc40 ;
-	color: #f8f9fa;
-    height: 52px;
+        .to-be-changed {
+            background-color: #fcbc40;
+            color: #f8f9fa;
+            height: 52px;
             margin-left: 1px;
-}
-       </style>
-        
-    </head>
- 
+        }
+    </style>
+
+</head>
+
 
 
 <body>
@@ -70,39 +73,44 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/aboutus.html" id="dropdown-a">About</a>
                         </li>
+
                         <li class="nav-item "><a class="nav-link" href="/GuessByDishName">Guess By Dish</a></li>
                         <li class="nav-item"><form action="profile" method="GET"><button  class="nav-link user2"><i class="fas fa-user"></i></button></form></li>
+           
+                        </li>
+
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main >
-    
-       
+    <main>
+
+
         <div class="reslut">
             <%recipe.map(data=>{%>
-<p>
-    <%=data.ingridiant%>
-</p>
-<br/>
-<p>
-   <img src="<%=data.image%>" alt="" />
-</p>
-<br/>
-<p>
-    <%=data.summary %>
-</p>
-<br/>
-<p>
-    
-    <%=data.instruction%>
-</p>
-<br/>
-<br/>
-            <%});%>
+                <p>
+                    <%=data.ingridiant%>
+                </p>
+                <br />
+                <p>
+                    <img src="<%=data.image%>" alt="" />
+                </p>
+                <br />
+                <p>
+                    <%=data.summary %>
+                </p>
+                <br />
+                <p>
+
+                    <%=data.instruction%>
+                </p>
+                <br />
+                <br />
+                <%});%>
         </div>
         
+
 
 
 
@@ -221,22 +229,22 @@
 
 
 
-        
+
     </main>
 
- 
-    <footer>
-    <ul class="footerli">
-        <li> <a href="https://www.yahoo.com"><i class="fas fa-envelope-square fig"></i></a></li>
-        <li> <a href="https://www.twitter.com"><i class="fab fa-twitter fig"></i></a></li>
-        <li> <a href="https://www.github.com"><i class="fab fa-github-alt fig"></i></a></li>
-        <li> <a href="https://www.linkedin.com"><i class="fab fa-linkedin fig"></i></a></li>
-    </ul>
-    <p>Copy rights are reserved by AMIGOS &copy;</p>
-</footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<script src='/js/app.js'></script>
+    <footer>
+        <ul class="footerli">
+            <li> <a href="https://www.yahoo.com"><i class="fas fa-envelope-square fig"></i></a></li>
+            <li> <a href="https://www.twitter.com"><i class="fab fa-twitter fig"></i></a></li>
+            <li> <a href="https://www.github.com"><i class="fab fa-github-alt fig"></i></a></li>
+            <li> <a href="https://www.linkedin.com"><i class="fab fa-linkedin fig"></i></a></li>
+        </ul>
+        <p>Copy rights are reserved by AMIGOS &copy;</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src='/js/app.js'></script>
 </body>
 
 
