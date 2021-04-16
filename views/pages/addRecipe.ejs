@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Add Your Own Recipe</h2>
+    <form action="/addedRecipes" method="POST">
+        <label for="UserName">Recipe Owner</label>
+        <input type="text" name="UserName">
+        <label for="RecipeName">Recipe Name</label>
+        <input type="text" name="RecipeName">
+        <label for="RecipeDetails">Recipe Instructions</label>
+        <input type="text" name="RecipeDetails">
+        <button type="submit"> Add Recipe</button>
+    </form>
+
+    <%- include ('./layout/sharedrecipies') %> 
+</body>
+</html>
