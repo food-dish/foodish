@@ -14,7 +14,7 @@ const client = new pg.Client(process.env.DATABASE_URL);
 
 server.use(cors());
 server.set('view engine', 'ejs');
- server.use(express.static('./public'));
+server.use(express.static('./public'));
 
 
 server.use(methodOverride('_method'));
