@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodieta</title>
+    <!-- favicon -->
+    <link rel="icon" href="logoused.ico" type="image/x-icon">
+    <!-- style -->
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a24ea374e8.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<!-- Start header -->
+<header class="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="images/logo.png" alt="" />
+            </a>
+            <div class="collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                 
+                    <li class="nav-item"><a class="nav-link" href="/searchByRecipe">Recipe</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="">Recipe</a></li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/movieta" data-toggle="dropdown">Movieta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutus.html" id="dropdown-a">About</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/contact-us.html">Contact</a></li>
+            
+                    <li class="nav-item"><form action="profile" method="GET"><button  class="nav-link user2"><i class="fas fa-user"></i></button></form></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- End header -->
+<!-- Slide start  -->
+<main style="height: 104%;">
+    <!-- <form action="profile" method="GET">
+        <button class="user"><i class="fas fa-user"></i></button>
+        <input class="user" type="submit" value="Profile"><i class="fas fa-user"></i>
+    </form> -->
+    <div style="position: relative;">
+        <section class="slider">
+            <img src="images/a.jpg" alt="" class="slideimg">
+            <div class="textbox">
+                <h2>"If you do not eat well, then you won’t be able to think well, love well, and sleep well"</h2>
+                <p>Amigos Team</p>
+                <!-- <button type="submit" class="btn-in"><a href="pages/sign"></a>Sign In</button> -->
+
+            </div>
+        </section>
+        <section class="slider1">
+            <img src="imgSam/img (3).jpg" alt="" class="slideimg">
+            <div class="textbox">
+                <h2>"If you're not the one cooking, stay out of the way and go straight to our movies side."</h2>
+                <p>Amigos Team</p>
+                <!-- <button type="submit" class="btn-in"><a href="pages/sign"></a>Sign In</button> -->
+            </div>
+        </section>
+        <section class="slider2">
+            <img src="imgSam/img (4).jpg" alt="" class="slideimg">
+            <div class="textbox">
+                <h2> "9 out of 10 people love chocolate. And the 10th person is always lying."</h2>
+                <p>Amigos Team</p>
+                <!-- <button type="submit" class="btn-in"><a href="pages/sign"></a>Sign In</button> -->
+            </div>
+        </section>
+        <section class="slider3">
+            <img src="imgSam/img (2).jpg" alt="" class="slideimg">
+            <div class="textbox">
+                <h2> "Eat whatever you want, and if someone tries to lecture you about your weight, eat them too!"</h2>
+                <p>Amigos Team</p>
+            </div>
+        </section>
+        <button type="submit" class="btn-in"><a href="./sign">Sign UP</a></button>
+        <!-- id="myBtn" class="btn-in" -->
+    </div>
+    <!-- end slide  -->
+    <!-- The Modal -->
+
+
+    <!-- start recipes -->
+    <!-- first one  -->
+    <section class="salad">
+        <div><img src="images/salad.jpg" alt="" srcset=""></div>
+        <div class="salad-back">
+            <h2>Recipes Section</h2>
+        </div>
+        <div class="saladdesc">
+            <h2>SALAD</h2>
+            <p>The truth is, eating salad will generally help you live longer, and it’s not even in dispute.
+                Additional benefits of fiber is that it can lower blood pressure and reduce bad cholesterol levels.</p>
+            <form class="searchForm" action="/searches/new" method="POST">
+                <input hidden name="searchWay" value="salad">
+                <button class="recipebtn" type="submit">show more ...</button>
+            </form>
+        </div>
+    </section>
+    <!-- second one  -->
+    <div class="appe-">
+        <div class="onepeice">
+            <img src="images/appei.jpg" alt="" srcset="">
+            <div class="appetizers-desc">
+                <h2>Appetizers</h2>
+                <p>Use as an appetizer when eating.
+                    Helps to fill the stomach when eating before starting to eat the main meal, which man feels full,
+                    which
+                    limits the intake of foods that increase the body mass.
+                </p>
+                <form class="searchForm" action="/searches/new" method="POST">
+                    <input hidden name="searchWay" value="appetizer">
+                    <button class="recipebtn" type="submit">show more ...</button>
+                </form>
+            </div>
+        </div>
+        <div class="onepeice">
+            <img src="images/drinks.jpg" alt="" srcset="">
+            <div class="appetizers-desc">
+                <h2>Drinks</h2>
+                <p>Fresh juice floods your body with antioxidants that boost your immune system.
+                </p>
+                <form class="searchForm" action="/searches/new" method="POST">
+                    <input hidden name="searchWay" value="drink">
+                    <button class="recipebtn" type="submit">show more ...</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr id="a">
+    <section class="desserts">
+        <!-- <img src="images/desserts.png" alt="" srcset=""> -->
+        <img src="images/desserts2.png" alt="">
+        <div>
+            <h2>Desserts</h2>
+            <p>Dessert is not only delicious, but it also helps you keep a balanced diet. Eating healthy doesn't mean
+                only eating tons of vegetables. In fact, dessert can actually help you receive your daily amount of
+                required nutrients.
+            </p>
+            <form class="searchForm" action="/searches/new" method="POST">
+                <input hidden name="searchWay" value="dessert">
+                <button class="recipebtn" type="submit">show more ...</button>
+            </form>
+        </div>
+    </section>
+    <hr id="b">
+
+    <section class="bread">
+        <div class="breadback"></div>
+        <div class="breckfastimgs">
+            <img src="imgSam/img (1).jpg" alt="">
+            <img src="imgSam/img (23).jpg" alt="">
+        </div>
+        <form class="searchForm" action="/searches/new" method="POST">
+            <input hidden name="searchWay" value="bread">
+            <button class="recipebtn breadbtn" type="submit">Bread</button>
+        </form>
+        <form class="searchForm" action="/searches/new" method="POST">
+            <input hidden name="searchWay" value="breakfast">
+            <button class="recipebtn breackfastbtn" type="submit">Breackfast</button>
+        </form>
+    </section>
+
+    <section class="tastiesfood">
+        <h2>Which is the tastiest food?</h2>
+        <p>The world's most delicious food is a cheesy, spicy, Pizza dish from Italy. "There is no love sincerer than
+            the love of food," George Bernard Shaw said. Judging by the number of amazing dishes out there, he was
+            right.</p>
+    </section>
+
+    <div class="lastimg">
+        <img src="images/pizza.jpg" alt="">
+    </div>
+</main>
+
+
+<footer>
+    <ul class="footerli">
+        <li> <a href="https://www.yahoo.com"><i class="fas fa-envelope-square fig"></i></a></li>
+        <li> <a href="https://www.twitter.com"><i class="fab fa-twitter fig"></i></a></li>
+        <li> <a href="https://www.github.com"><i class="fab fa-github-alt fig"></i></a></li>
+        <li> <a href="https://www.linkedin.com"><i class="fab fa-linkedin fig"></i></a></li>
+    </ul>
+    <p>Copy rights are reserved by AMIGOS &copy;</p>
+</footer>
+
+</body>
+
+</html>
