@@ -30,22 +30,14 @@ client.connect()
 );
   })
 
-
-
-
 function getSearchByRecipe(req,res)
 {
-
-  
-
 
   let typeSearch = req.body.typeSearch;
   let valueSearch = req.body.valueSearch;
   console.log(typeSearch,valueSearch)
   let key = process.env.APIKEY;
 
-  //addRecipeInformation	=true //summary
-  //https://api.spoonacular.com/recipes/complexSearch?apiKey=eea9d3bfa45d4bd1a26185ee87c68d4b&instructionsRequired=true&addRecipeInformation=true
   let url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${key}&${typeSearch}=${valueSearch}&instructionsRequired=true&addRecipeInformation=true`;
   superagent.get(url)
       .then(response => {
@@ -58,9 +50,8 @@ function getSearchByRecipe(req,res)
               
           });
 
-        //  res.render('pages/searches/show', { books: formattedResutl });
+     
        res.render('pages/showrecipe.ejs', { recipe: formattedResutl });
-       // res.send(result)
       })
       .catch(e => { throw Error('Cannot get data from the API') })
 
@@ -83,9 +74,110 @@ function SearchByRecipe(searchByRecipe)
   this.ingridiant=searchByRecipe.title;
   this.image=searchByRecipe.image;
   this.summary=searchByRecipe.summary.toString().replace(/(<([^>]+)>)/gi, "");
-
-  
   this.instruction=searchByRecipe.analyzedInstructions[0].steps.map(data=>{return data.step});
 
 
 }
+//////////////////////////////////////////////////////////////yasmeen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////sewar
+
+
+
+
+
+
+
+
+
