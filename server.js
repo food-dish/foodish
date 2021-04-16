@@ -9,6 +9,7 @@ const server = express();
 const PORT = process.env.PORT || 5000;
 const superagent = require('superagent');
 const methodOverride = require('method-override');
+const { request, response } = require('express');
 
 const client = new pg.Client(process.env.DATABASE_URL);
 
@@ -80,11 +81,56 @@ function SearchByRecipe(searchByRecipe)
 }
 //////////////////////////////////////////////////////////////yasmeen
 
+server.post('/nutrition', recipeByNutrients)
+server.post('/addedRecipes', addRecipes)
+server.get('/nutrientsPage', (request,response)=>{
+  response.render('pages/nutrientsPage')
+})
+server.get('/addRecipe', (request,response)=>{
+  response.render('pages/addRecipe')
+})
+function recipeByNutrients (request, response){
+  let key = process.env.APIKEY; 
+  let searchby = request.body.searchBy
+  let value = request.body.value
+  console.log("aaaaa",request.body.value)
+  let URL = `https://api.spoonacular.com/recipes/findByNutrients?&apiKey=${key}&${searchby}=${value}`
 
+  superagent.get(URL)
+  .then(results=>{
+    let apiData = results.body;
+    console.log("eeeeee",apiData);
 
+          let formattedResult2 = apiData.map(element => {
 
+               return new Nutrient(element)
+              
+          });
 
+     
+       response.render('pages/renderNutrients.ejs', { nutrients: formattedResult2 });
+  })
+}
 
+function Nutrient(data){
+  this.title = data.title;
+  this.image = data.image;
+  this.calories= data.calories;
+  this.protein= data.protein;
+  this.fat = data.fat;
+  this.carbs= data.carbs;
+}
+function addRecipes (request, response){
+let {UserName,RecipeName,RecipeDetails}= request.body;
+let SQL = `INSERT INTO addedRecipies (UserName,RecipeName,RecipeDetails) VALUES ($1,$2,$3) RETURNING *; `;
+let safeValues = [UserName,RecipeName,RecipeDetails];
+client.query(SQL, safeValues)
+.then(results=>{
+  console.log('ttttttt',results);
+  response.render('pages/layout/sharedrecipies', {userRecipe: results.rows[0]})
+})
+
+}
 
 
 
