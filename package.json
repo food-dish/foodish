@@ -24,6 +24,7 @@
     "express": "^4.17.1",
     "method-override": "^3.0.0",
     "pg": "^8.6.0",
+    "server": "^1.0.32",
     "superagent": "^6.1.0"
   },
   "devDependencies": {
