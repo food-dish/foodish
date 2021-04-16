@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes</title>
+    <title>Guess</title>
     <!-- favicon -->
     <link rel="icon" href="logoused.ico" type="image/x-icon">
     <!-- style -->
@@ -73,12 +73,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/aboutus.html" id="dropdown-a">About</a>
                         </li>
-
                         <li class="nav-item "><a class="nav-link" href="/GuessByDishName">Guess By Dish</a></li>
-                        <li class="nav-item"><form action="profile" method="GET"><button  class="nav-link user2"><i class="fas fa-user"></i></button></form></li>
-           
+                        <li class="nav-item">
+                            <form action="profile" method="GET"><button class="nav-link user2"><i
+                                        class="fas fa-user"></i></button></form>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -88,28 +87,34 @@
 
 
         <div class="reslut">
-            <%recipe.map(data=>{%>
+           
                 <p>
-                    <%=data.ingridiant%>
+                    
+                    <%=dish.calories.min%>
+                    <%=dish.calories.max%>
                 </p>
                 <br />
                 <p>
-                    <img src="<%=data.image%>" alt="" />
+                    <%=dish.carbs.min%>
+                    <%=dish.carbs.max%>
+                   
                 </p>
                 <br />
                 <p>
-                    <%=data.summary %>
+                    <%=dish.fat.min%>
+                    <%=dish.fat.max%>
+                
                 </p>
                 <br />
                 <p>
-
-                    <%=data.instruction%>
+                    <%=dish.protein.min%>
+                    <%=dish.protein.max%>
+              
                 </p>
                 <br />
                 <br />
-                <%});%>
+               
         </div>
-        
 
 
 

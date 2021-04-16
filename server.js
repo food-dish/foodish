@@ -9,7 +9,9 @@ const server = express();
 const PORT = process.env.PORT || 5000;
 const superagent = require('superagent');
 const methodOverride = require('method-override');
+
 const { request, response } = require('express');
+
 
 const client = new pg.Client(process.env.DATABASE_URL);
 
@@ -23,6 +25,7 @@ server.use(express.urlencoded({ extended: true }));
 server.get('/', homePage);
 server.get('/searchByRecipe',searchByRecipe);
 server.post('/getSearchByRecipe',getSearchByRecipe);
+
 
 client.connect()
   .then(() => {
@@ -219,8 +222,62 @@ client.query(SQL, safeValues)
 
 ///////////////////////////////////////////sewar
 
+server.post('/GuessByDishNameres', Guess);
+server.get('/GuessByDishName', (req,res)=>{
+  res.render('pages/GuessByDishName')
+})
 
 
+function Guess(req,res)
+{
+
+  let title = req.body.Guess;
+  console.log("reqqqqqqqqqqqqqqqqqqqqqqqqq", req.body);
+  let key = process.env.APIKEY;
+
+  let urlGuess = `https://api.spoonacular.com/recipes/guessNutrition?apiKey=${key}&title=${title}`;
+  superagent.get(urlGuess)
+      .then(response => {
+
+         let result = response.body;
+        
+        
+       
+       
+          // let formattedResutl = result.map(searchByDish => {
+
+             //  return   new GuessDish(result); 
+                
+          //   });
+
+        
+            console.log("responseeeeeeeeeeeeee" ,result.calories.confidenceRange95Percent)
+            console.log("responseeeeeeeeeeeeee" ,result.fat.confidenceRange95Percent)
+            console.log("responseeeeeeeeeeeeee" ,result.protein.confidenceRange95Percent)
+            console.log("responseeeeeeeeeeeeee" ,result.carbs.confidenceRange95Percent)
+           
+          
+         
+     
+       
+          
+     
+     res.render('pages/showGuess', { dish: new GuessDish(result) });
+      // console.log(formattedResutl);
+      })
+      .catch(e => { res.send('Cannot get data from the API') });
+
+
+};
+
+function GuessDish(Data)
+{
+this.calories=Data.calories.confidenceRange95Percent;
+this.carbs=Data.carbs.confidenceRange95Percent;
+this.fat=Data.fat.confidenceRange95Percent;
+this.protein=Data.protein.confidenceRange95Percent;
+
+}
 
 
 
