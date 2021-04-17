@@ -77,7 +77,7 @@ function SearchByRecipe(searchByRecipe)
 {
   this.ingridiant=searchByRecipe.title;
   this.image=searchByRecipe.image;
-  this.summary=searchByRecipe.summary.toString().replace(/(<([^>]+)>)/gi, "");
+  this.summary=searchByRecipe.summary.toString().replace(/(<([^>]+)>)/, "");
   this.instruction=searchByRecipe.analyzedInstructions[0].steps.map(data=>{return data.step});
 
 
@@ -129,7 +129,7 @@ let SQL = `INSERT INTO addedRecipies (UserName,RecipeName,RecipeDetails) VALUES 
 let safeValues = [UserName,RecipeName,RecipeDetails];
 client.query(SQL, safeValues)
 .then(results=>{
-  console.log('ttttttt',results);
+  console.log('ttttttt',results.rows[0].username);
   response.render('pages/layout/sharedrecipies', {userRecipe: results.rows[0]})
 })
 
