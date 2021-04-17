@@ -48,14 +48,21 @@ function getSearchByRecipe(req,res)
 
          let result = response.body.results;
 
-          let formattedResutl = result.map(searchByRecipe => {
 
+          let formattedResutl = result.map(searchByRecipe => {
+             console.log(searchByRecipe.summary.toString().replace(/(<([^>]+)>)/ig, " "));
+           
+            // // this.summary=searchByRecipe.summary.toString().replace(/(<([^>]+)>)/, "");
+            // // this.instruction=searchByRecipe.analyzedInstructions[0].steps.map(data=>{return data.step});
+            
                return new SearchByRecipe(searchByRecipe)
+            
               
           });
 
      
        res.render('pages/showrecipe.ejs', { recipe: formattedResutl });
+       res.end();
       })
       .catch(e => { throw Error('Cannot get data from the API') })
 
@@ -77,8 +84,8 @@ function SearchByRecipe(searchByRecipe)
 {
   this.ingridiant=searchByRecipe.title;
   this.image=searchByRecipe.image;
-  this.summary=searchByRecipe.summary.toString().replace(/(<([^>]+)>)/, "");
-  this.instruction=searchByRecipe.analyzedInstructions[0].steps.map(data=>{return data.step});
+  this.summary=searchByRecipe.summary.toString().replace(/(<([^>]+)>)/ig, "");
+  this.instruction=searchByRecipe.analyzedInstructions.length!=0?searchByRecipe.analyzedInstructions[0].steps.map(data=>{return data.step}):'Ask Our Shif';
 
 
 }
@@ -90,19 +97,27 @@ server.get('/nutrientsPage', (request,response)=>{
   response.render('pages/nutrientsPage')
 })
 server.get('/addRecipe', (request,response)=>{
-  response.render('pages/addRecipe')
+  
+let SQL = `select * from addedRecipies ; `;
+
+client.query(SQL)
+.then(results=>{
+  response.render('pages/addRecipe', {userRecipe: results.rows})
+  
+})
+
 })
 function recipeByNutrients (request, response){
   let key = process.env.APIKEY; 
   let searchby = request.body.searchBy
   let value = request.body.value
-  console.log("aaaaa",request.body.value)
+ 
   let URL = `https://api.spoonacular.com/recipes/findByNutrients?&apiKey=${key}&${searchby}=${value}`
 
   superagent.get(URL)
   .then(results=>{
     let apiData = results.body;
-    console.log("eeeeee",apiData);
+    
 
           let formattedResult2 = apiData.map(element => {
 
@@ -124,13 +139,13 @@ function Nutrient(data){
   this.carbs= data.carbs;
 }
 function addRecipes (request, response){
-let {UserName,RecipeName,RecipeDetails}= request.body;
-let SQL = `INSERT INTO addedRecipies (UserName,RecipeName,RecipeDetails) VALUES ($1,$2,$3) RETURNING *; `;
-let safeValues = [UserName,RecipeName,RecipeDetails];
+let {UserName,RecipeName,RecipeDetails,img_url}= request.body;
+let SQL = `INSERT INTO addedRecipies (UserName,RecipeName,RecipeDetails,img_url) VALUES ($1,$2,$3,$4) RETURNING *; `;
+let safeValues = [UserName,RecipeName,RecipeDetails,img_url];
 client.query(SQL, safeValues)
 .then(results=>{
-  console.log('ttttttt',results.rows[0].username);
-  response.render('pages/layout/sharedrecipies', {userRecipe: results.rows[0]})
+
+  response.render('pages/addRecipe', {userRecipe: results.rows})
 })
 
 }
@@ -232,7 +247,7 @@ function Guess(req,res)
 {
 
   let title = req.body.Guess;
-  console.log("reqqqqqqqqqqqqqqqqqqqqqqqqq", req.body);
+ 
   let key = process.env.APIKEY;
 
   let urlGuess = `https://api.spoonacular.com/recipes/guessNutrition?apiKey=${key}&title=${title}`;
@@ -251,10 +266,7 @@ function Guess(req,res)
           //   });
 
         
-            console.log("responseeeeeeeeeeeeee" ,result.calories.confidenceRange95Percent)
-            console.log("responseeeeeeeeeeeeee" ,result.fat.confidenceRange95Percent)
-            console.log("responseeeeeeeeeeeeee" ,result.protein.confidenceRange95Percent)
-            console.log("responseeeeeeeeeeeeee" ,result.carbs.confidenceRange95Percent)
+          
            
           
          

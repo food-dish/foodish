@@ -22,7 +22,8 @@ $('#typeSearch').on('change', function () {
             break;
         case 'diet':
             $('#searching').empty();
-            $('#searching').append(`  <select name="valueSearch" id="valueSearch" class="input"><option value='Ketogenic'>Ketogenic</option> 
+            $('#searching').append(`  <select name="valueSearch" id="valueSearch" class="input">
+            <option value='Ketogenic'>Ketogenic</option> 
                    <option value="Vegetarian">Vegetarian</option> 
                           <option value="Lacto-Vegetarian
                           ">Lacto Vegetarian
