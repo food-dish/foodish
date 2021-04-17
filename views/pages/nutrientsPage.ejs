@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<%- include('./layout/header')  %> 
+
+<div style="margin-top: 22%;">
     <form action="/nutrition" method="post">
         <select name="searchBy" id="searchBy" class="input">
             <option value="maxCarbs">maxCarbs</option>
@@ -19,5 +13,6 @@
         <input type="number"  name="value" placeholder="Enter value" id="value" >
         <button type="submit">Search</button>
     </form>
+    </div>
 </body>
 </html>
