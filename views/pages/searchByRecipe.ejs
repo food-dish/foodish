@@ -1,26 +1,28 @@
 <%- include('./layout/header')  %> 
-
+<link rel="stylesheet" href="/styles/recipe.css">
 
     <main >
     
-        <!-- <div class="basediv" style="    margin-top: -25px; -->
-    
-
-            <div class="navbar navbar-static-top navbar-inverse">
-                <div  style="margin-left: 105px; margin-top: 22px;" class="navbar-brand">Recipe Box</div>
-            </div>
+        <img src="/images/test8.jpg" alt="" class="backgroundImage">
+            <div class="containerForm">
+            
            
             <form class="caloriesDayForm" action="/getSearchByRecipe" method="post">
-            <div class=recipeDiv>
-               
+                <h4>Recipe Box</h4> 
+                <fieldset>
+                    <div class=recipeDiv>
+                
+                <fieldset>
                 <select name="typeSearch" id="typeSearch" class="input">
-                    <option value="cuisine">cuisine</option>
+                    <option value="cuisine" class="dropdown">cuisine</option>
                     <option value="diet">diet</option>
                     
                     <option value="intolerances">intolerances</option>
                     <option value="includeIngredients">includeIngredients</option>
-                    
+                </fieldset>
                 </select>
+            </fieldset>
+            
                  
                 
             </div>
@@ -40,7 +42,7 @@
             <button class ="to-be-changed" type="submit">Search</button>
         </form>
           
-            
+    </div>
         </div>
       
     </main>
