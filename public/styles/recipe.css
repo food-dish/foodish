@@ -32,18 +32,29 @@ main{
 
 }
 .containerForm{
-  position:relative;
-  right: 70px;
-  bottom: 540px;
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  animation: form 1s;
+    position:relative;
+    right: 70px;
+    bottom: 540px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    animation: form 1s;
 
 }
+form input 
+{
+    width: 400px;
+    height: 50px;
+    margin-left: 130px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: solid 2px #0A7029;
 
-form {
+}
+form  {
     /* background-color: #adadab; */
     padding: 40px;
     margin: 50px 0;
@@ -61,7 +72,7 @@ form {
     text-align: center; 
     }  
 
-form select {
+form select{
     width: 400px;
     height: 50px;
     margin-left: 130px;
@@ -82,6 +93,7 @@ form h4{
     margin-bottom: 20px;
         
 }
+
 
 select option{
     border:solid 3px #0A7029;
@@ -117,3 +129,4 @@ button{
   }
 
   
+ 
