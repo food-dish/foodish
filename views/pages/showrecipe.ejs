@@ -1,16 +1,21 @@
 <%- include('./layout/header')  %> 
 
-    <main>
+<link rel="stylesheet" href="/styles/showRecipe.css">
 
+
+<body>
+    
+    <main>
 
         <div class="reslut">
             <%recipe.map(data=>{%>
+                <div class="cardDiv">
                 <p>
                     <%=data.ingridiant%>
                 </p>
                 <br />
                 <p>
-                    <img src="<%=data.image%>" alt="" />
+                    <img src="<%=data.image%>" alt=""  class="imgDiv"/>
                 </p>
                 <br />
                 <p>
@@ -24,139 +29,18 @@
                 <br />
                 <br />
                 <%});%>
-        </div>
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
+            </div>
 
     </main>
 
-
     <footer>
-        <ul class="footerli">
+        <!-- <ul class="footerli">
             <li> <a href="https://www.yahoo.com"><i class="fas fa-envelope-square fig"></i></a></li>
             <li> <a href="https://www.twitter.com"><i class="fab fa-twitter fig"></i></a></li>
             <li> <a href="https://www.github.com"><i class="fab fa-github-alt fig"></i></a></li>
             <li> <a href="https://www.linkedin.com"><i class="fab fa-linkedin fig"></i></a></li>
-        </ul>
-        <p>Copy rights are reserved by AMIGOS &copy;</p>
+        </ul> -->
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
