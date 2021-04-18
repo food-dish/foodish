@@ -81,3 +81,8 @@ open.addEventListener("click", function(){
         changeIcon = true;
     }
 });
+
+$(".card.flip-container").on('click', function() {
+    $(this).toggleClass('flip');
+  })
+
