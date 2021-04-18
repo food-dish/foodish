@@ -19,10 +19,11 @@
     <div class="result">
         <% nutrients.forEach(element=>{ %>
             <div>
-            <h3>
+            <h3 class="h-3">
                 <%= element.title %>
             </h3>
             <img src="<%= element.image%> " alt="">
+            <div class="pi">
             <p>
                 calories : <%= element.calories %>
             </p>
@@ -36,6 +37,7 @@
             <p>
                 carbs : <%= element.carbs %>
             </p>
+        </div>
             </div>
             <% }) %>
     </div>
