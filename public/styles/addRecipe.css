@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    color: #dc2f02;
+    font-weight: bold;
+
+}
+h2{
+    margin-left: 530px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: large;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+}
+.formDiv{
+    position: relative;
+    bottom: 600px;
+    right: 50px;
+}
+/* .backDiv{
+    background-size: cover;
+    background-position: center;
+
+
+} */
+.fieldDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-top: 10px;
+
+}
+button{
+    width: 150px;
+    margin-left: 670px;
+    margin-top: 30px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #dc2f02;
+    color: white;
+    border: solid #dc2f02;
+    font-weight: bold;
+}
+/* .fieldDiv input{
+    margin-left: 50px;
+} */
+.fieldDiv .input0{
+    position: relative;
+    left: 50px;
+    height: 30px;
+
+}
+.fieldDiv .input1{
+    position: relative;
+    left: 58px;
+    height: 30px;
+}
+.fieldDiv .input2{
+    position: relative;
+    left: 15px;
+    height: 100px;
+}
+.fieldDiv .input3{
+    position: relative;
+    left: 75px;
+    height: 30px;
+}
+
+input{
+    width: 220px;
+    border-radius: 5px;
+    border: solid #dc2f02;
+}
+.label0{
+    margin-left: 25px;
+}
+.label1{
+    margin-left: 15px;
+}
+.label2{
+    margin-left: 55px;
+
+}
+#addedRecipies img{
+    height: 400px;
+    width: 550px;
+}
+#addedRecipies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-left: 120px;
+    position: absolute;
+    bottom: 90px;
+    left: 200px; 
+}
+#addedRecipies h3, img, h4, p{
+    margin-bottom: 10px;
+}
+#addedRecipies p{
+    text-align: justify;
+    width: 700px;
+}
+#addedRecipies h3{
+    font-size: large;
+    margin-bottom: 20px;
+}
+.backg{
+    width: 100%;
+    /* background-image: url("/images/test13.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 180px;
+    margin-left: 50px;
+    z-index: -1;
+}
+
+.backgroundIMG{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 200px;
+    left: 50px;
+
+}
+

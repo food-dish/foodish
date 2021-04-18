@@ -1,27 +1,52 @@
 <%- include('./layout/header')  %> 
 
+<link rel="stylesheet" href="/styles/addRecipe.css">
+<body>
+    
+<main>
+    <div class="backDiv">
+    <img src="/images/addtest1.jpg" alt="" class="backgroundImage">
+    <div class="formDiv">
+
     <h2>Add Your Own Recipe</h2>
     <form action="/addedRecipes" method="POST">
-        <label for="UserName">Recipe Owner</label>
-        <input type="text" name="UserName">
-        <label for="RecipeName">Recipe Name</label>
-        <input type="text" name="RecipeName">
-        <label for="RecipeDetails">Recipe Instructions</label>
-        <input type="text" name="RecipeDetails">
-        <label for="img_url">Add image</label>
-        <input type="url" name="img_url" placeholder="Insert url">
+        <div class="fieldDiv">
+        <label for="UserName" class="label0">Recipe Owner</label>
+        <input type="text" name="UserName" class="input0">
+    </div>
+    <div class="fieldDiv">
+        <label for="RecipeName" class="label1">Recipe Name</label>
+        <input type="text" name="RecipeName" class="input1">
+    </div>
+    <div class="fieldDiv">
+        <label for="RecipeDetails" class="label2">Recipe Instructions</label>
+        <input type="text" name="RecipeDetails" class="input2">
+    </div>
+    <div class="fieldDiv">
+        <label for="img_url" class="label3">Add image</label>
+        <input type="url" name="img_url" placeholder="Insert url" class="input3">
+    </div>
         <button type="submit"> Add Recipe</button>
     </form>
+    <div class="backg">
+        <img src="/images/test13.jpg" alt="" class="backgroundImage" style="z-index: -1;">
 
-    <div id="addedRecipies">
         
         <%userRecipe.map(data=>{ %>
+            <div id="addedRecipies">
+
         <h3><%= data.username   %>  </h3> 
         <img src="<%= data.img_url   %> "/> 
         <h4><%= data.recipename %>  </h4>
         <p><%=  data.recipedetails   %> </p>
-        <% }); %>
     </div>
+        <% }); %>
+</div>
+</div>
 
+</div>
+
+    
+</main>
 </body>
 </html>
