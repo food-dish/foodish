@@ -1,6 +1,8 @@
 <%- include('./layout/header')  %> 
 
-<div style="margin-top: 22%;">
+<div class="parent">
+    <!-- <img src="/imgSam/dawood.jpg" alt="" srcset=""> -->
+<div class="form">
     <form action="/nutrition" method="post">
         <select name="searchBy" id="searchBy" class="input">
             <option value="maxCarbs">maxCarbs</option>
@@ -14,5 +16,29 @@
         <button type="submit">Search</button>
     </form>
     </div>
+    <div class="result">
+        <% nutrients.forEach(element=>{ %>
+            <div>
+            <h3>
+                <%= element.title %>
+            </h3>
+            <img src="<%= element.image%> " alt="">
+            <p>
+                calories : <%= element.calories %>
+            </p>
+            <p>
+                protein : <%= element.protein %>
+    
+            </p>
+            <p>
+                fat : <%= element.fat %>
+            </p>
+            <p>
+                carbs : <%= element.carbs %>
+            </p>
+            </div>
+            <% }) %>
+    </div>
+</div>
 </body>
 </html>

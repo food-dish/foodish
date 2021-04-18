@@ -90,7 +90,7 @@ function SearchByRecipe(searchByRecipe)
 server.post('/nutrition', recipeByNutrients)
 server.post('/addedRecipes', addRecipes)
 server.get('/nutrientsPage', (request,response)=>{
-  response.render('pages/nutrientsPage')
+  response.render('pages/nutrientsPage',{ nutrients: [] })
 })
 server.get('/addRecipe', (request,response)=>{
   
@@ -122,7 +122,8 @@ function recipeByNutrients (request, response){
           });
 
      
-       response.render('pages/renderNutrients.ejs', { nutrients: formattedResult2 });
+      // response.render('pages/renderNutrients.ejs', { nutrients: formattedResult2 });
+       response.render('pages/nutrientsPage.ejs', { nutrients: formattedResult2 });
   })
 }
 
