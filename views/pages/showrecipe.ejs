@@ -10,26 +10,28 @@
         <div class="reslut">
             <%recipe.map(data=>{%>
                 <div class="cardDiv">
-                <p>
+                <p class="ingr">
                     <%=data.ingridiant%>
                 </p>
+
                 <br />
                 <p>
                     <img src="<%=data.image%>" alt=""  class="imgDiv"/>
                 </p>
                 <br />
-                <p>
-                    <%=data.summary %>
+                <p class="text">
+                   <span>Summary :</span>  <%=data.summary %>
                 </p>
                 <br />
-                <p>
+                <p class="text">
 
-                    <%=data.instruction%>
+                 <span> Instruction :</span>  <%=data.instruction%>
                 </p>
                 <br />
                 <br />
-                <%});%>
             </div>
+                <%});%>
+           
             </div>
 
     </main>
