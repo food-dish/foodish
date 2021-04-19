@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap');
+
 
 *{
 	margin: 0;
@@ -78,6 +81,9 @@ nav ul li{
 	list-style: none;
 	transform: translateX(100rem);
 	animation: slideIn .5s forwards;
+	/* font-family: 'Lora', serif; */
+	  font-family: 'Domine', serif;
+
 }
 
 nav ul li:nth-child(1){

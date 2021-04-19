@@ -8,7 +8,7 @@ body{
     flex-direction: column;
     justify-content:space-between;
     color: #dc2f02;
-    font-weight: bold;
+    
 
 }
 h2{
@@ -19,13 +19,14 @@ h2{
     font-size: 30px;
     text-align: center;
     color:  #0A7029;
+    font-weight: bold;
 }
 form{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
+    font-weight: bold;
     
 }
 .formDiv{
@@ -34,6 +35,7 @@ form{
     right: 50%;
     top: 0;
     transform: translate(44%, 50%);
+    font-weight: bold;
 }
 /* .backDiv{
     background-size: cover;
@@ -47,6 +49,7 @@ form{
     justify-content:center;
     margin-top: 10px;
     margin-left: 20px;
+    font-weight: bold;
 
 }
 button{
@@ -90,22 +93,26 @@ input{
 .label0{
     font-size: 23px;
     margin-left: 25px;
+    font-weight: bold;
 }
 .label1{
     font-size: 23px;
 
     margin-left: 15px;
+    font-weight: bold;
 }
 .label2{
     font-size: 23px;
 
     margin-left: 55px;
+    font-weight: bold;
 
 }
 .label3{
     font-size: 23px;
 
     margin-left: 15px;
+    font-weight: bold;
 }
 #addedRecipies img{
     height: 400px;
@@ -120,6 +127,7 @@ input{
     position: absolute;
     bottom: 90px;
     left: 200px; 
+    font-weight: bold;
 }
 #addedRecipies h3, img, h4, p{
     margin-bottom: 10px;
@@ -127,6 +135,7 @@ input{
 #addedRecipies p{
     text-align: justify;
     width: 700px;
+    font-weight: bold;
 }
 #addedRecipies h3{
     font-size: large;
@@ -143,6 +152,7 @@ input{
 }
 .backg div{
     width: 60%;
+    
    
 }
 .backg div img{
@@ -164,6 +174,7 @@ input{
 main{
 
     position: relative;
+    font-weight: bold;
 
 }
 .backgroundImage
