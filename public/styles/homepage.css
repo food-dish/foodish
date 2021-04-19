@@ -441,9 +441,8 @@ div span:last-child {
 
   #stars i{
       font-size: 35px;
-      float: right;
-      margin-bottom: 15px;
-
+      margin-bottom: 15px; 
+      float: right;    
   }
    i .fa-star{
     width: 20px;
