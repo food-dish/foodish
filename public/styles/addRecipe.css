@@ -187,25 +187,42 @@ main{
 }
 
 
+.cardDiv div > *
+{
+    width: 80%;
+    text-align: center;
+    margin: 5% auto;
+}
+.cardDiv div
+{
+    background-image: url('../imgSam/jh.png');
+    background-position: center;
+    background-size: cover;
+    margin: 4% 0;
+     border: solid; 
+     border-radius: 50px; 
+     border-color: #737975;
+     box-shadow: 0px 1px 24px 5px black;
+}
 .cardDiv 
 {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 45%;
-    border: solid;
+    /* border: solid; */
     margin: 20px;
-    padding: 40px;
+    /* padding: 40px; */
     align-items: center;
-    border-radius: 50px;
-    border-color: #737975;
+    /* border-radius: 50px; */
+    /* border-color: #737975; */
     transition: box-shadow 0.2s ease-in-out;
-    background-color: cornsilk;
+    
 
     
     
-     box-shadow: 0 0 8px 0 rgb(17 22 26 / 16%),0 4px 8px 0 rgb(17 22 26 / 8%), 0 8px 16px 0 rgb(17 22 26 / 8%);
-    /*background: linear-gradient(124deg, #D8F3DC, #B7E4C7, #95D5B2, #74C69D, #52B788, #52B788, #D8F3DC, #74C69D, #74C69D);
+      /*background: linear-gradient(124deg, #D8F3DC, #B7E4C7, #95D5B2, #74C69D, #52B788, #52B788, #D8F3DC, #74C69D, #74C69D);
     background-size: 1800% 1800%;
     -webkit-animation: rainbow 7s ease infinite;
     -z-animation: rainbow 7s ease infinite;

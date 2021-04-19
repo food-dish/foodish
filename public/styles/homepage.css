@@ -269,11 +269,12 @@ div span:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 250px;
+    /* margin-top: 250px; */
   }
   
   .cardreview {
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     height: 350px;
     width: 100%;
     max-width: 850px;
@@ -385,10 +386,12 @@ div span:last-child {
   
   .slider {
     position: absolute;
-    bottom: 25px;
-    left: 55%;
-    transform: translateX(-50%);
+    /* bottom: 25px; */
+    /* left: 55%; */
+    /* transform: translateX(-50%); */
     z-index: 1;
+    top: 93%;
+    left: 50%;
   }
   
   #slideImg:checked ~ .slider {
