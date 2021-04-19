@@ -7,6 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+    
 }
 main{
     display: flex;
@@ -122,3 +123,5 @@ p{
       animation-timing-function: ease-out;
     }
   }
+
+
