@@ -12,23 +12,28 @@ body{
 
 }
 h2{
-    margin-left: 590px;
+    /* margin-left: 590px; */
     margin-top: 20px;
     margin-bottom: 40px;
     font-weight: bold;
     font-size: 30px;
+    text-align: center;
+    color:  #0A7029;
 }
 form{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     
     
 }
 .formDiv{
-    position: relative;
-    bottom: 600px;
-    right: 50px;
+  
+    position: absolute;
+    right: 50%;
+    top: 0;
+    transform: translate(44%, 50%);
 }
 /* .backDiv{
     background-size: cover;
@@ -46,45 +51,41 @@ form{
 }
 button{
     width: 150px;
-    margin-left: 670px;
+    /* margin-left: 670px; */
     margin-top: 30px;
     height: 35px;
     border-radius: 5px;
-    background-color: #dc2f02;
+    background-color:  #0A7029;
     color: white;
-    border: solid #dc2f02;
+    border: solid #0A7029;
     font-weight: bold;
 }
 /* .fieldDiv input{
     margin-left: 50px;
 } */
 .fieldDiv .input0{
-    position: relative;
-    left: 50px;
-    height: 30px;
+   
+    height: 50px;
 
 }
 .fieldDiv .input1{
-    position: relative;
-    left: 60px;
-    height: 30px;
+    
+    height: 50px;
 
 }
 .fieldDiv .input2{
-    position: relative;
-    left: 6px;
+  
     height: 100px;
 }
 .fieldDiv .input3{
-    position: relative;
-    left: 75px;
-    height: 30px;
+   
+    height: 50px;
 }
 
 input{
-    width: 220px;
+    width: 317px;
     border-radius: 5px;
-    border: solid #dc2f02;
+    border: solid  #0A7029;
 }
 .label0{
     font-size: 23px;
@@ -134,12 +135,20 @@ input{
 .backg{
     width: 100%;
     /* background-image: url("/images/test13.jpg"); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 180px;
-    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    justify-items: center;
+    color:white;
     z-index: -1;
+}
+.backg div{
+    width: 60%;
+   
+}
+.backg div img{
+   
+    height: 62%;
+   
 }
 
 .backgroundIMG{
@@ -152,3 +161,107 @@ input{
 
 }
 
+main{
+
+    position: relative;
+
+}
+.backgroundImage
+{
+
+    position: absolute;
+    height: 100%;
+    width:100%;
+
+}
+
+.reslut
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 35px;
+    
+    
+}
+
+
+.cardDiv 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    border: solid;
+    margin: 20px;
+    padding: 40px;
+    align-items: center;
+    border-radius: 50px;
+    border-color: #737975;
+    transition: box-shadow 0.2s ease-in-out;
+    background-color: cornsilk;
+
+    
+    
+     box-shadow: 0 0 8px 0 rgb(17 22 26 / 16%),0 4px 8px 0 rgb(17 22 26 / 8%), 0 8px 16px 0 rgb(17 22 26 / 8%);
+    /*background: linear-gradient(124deg, #D8F3DC, #B7E4C7, #95D5B2, #74C69D, #52B788, #52B788, #D8F3DC, #74C69D, #74C69D);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 7s ease infinite;
+    -z-animation: rainbow 7s ease infinite;
+    -o-animation: rainbow 7s ease infinite;
+      animation: rainbow 7s ease infinite;}
+    @-webkit-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-moz-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-o-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%} */
+        
+    
+}
+
+.ingr
+{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.imgDiv{
+    width: 500px;
+    height: 300px;
+    margin: 10px 0;
+    border-radius: 30px; 
+    border-color: #737975; 
+    
+ 
+    
+}
+.text
+{
+    text-align: justify;
+    color: black;
+    font-size: medium;
+}
+
+.text1
+{
+    text-align: justify;
+    color: black;
+    font-size: 2larger;
+}

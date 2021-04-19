@@ -1,0 +1,7 @@
+{
+    "powermode.enabled": true,
+    "powermode.comboTimeout": 15,
+    "powermode.comboThreshold": 7,
+    "powermode.explosionFrequency": 1,
+    "powermode.presets": "flames"
+}
