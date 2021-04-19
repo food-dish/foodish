@@ -7,7 +7,7 @@ footer
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    background-color: seagreen;
+    background-color: #0A7029;
     align-items: center;
     height: 150px;
     
@@ -36,8 +36,8 @@ div p {
    
 }
 .imglogo img{
-    width: 75px;
-    height: 30px;
+    width: 175px;
+    height: 90px;
     /* margin: 12px; */
     /* margin-left: 170px; */
     /* margin-top: 17px; */
