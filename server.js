@@ -21,7 +21,7 @@ server.use(express.urlencoded({ extended: true }));
 server.get('/', homePage);
 server.get('/searchByRecipe',searchByRecipe); 
 server.post('/getSearchByRecipe',getSearchByRecipe);
-
+server.get('/aboutus',aboutus); 
 
 client.connect()
   .then(() => {
@@ -65,6 +65,9 @@ function getSearchByRecipe(req,res)
 
 }
 
+function aboutus(req,res){
+  res.render('pages/aboutus.ejs');
+}
 
 function searchByRecipe(req,res){
   res.render('pages/searchByRecipe.ejs');
