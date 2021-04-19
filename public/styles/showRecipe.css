@@ -7,6 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+    
 }
 main{
     /* background: url("/images/test8.jpg"); */
@@ -87,6 +88,7 @@ main{
 .text
 {
     text-align: justify;
+    
 }
 span
 {
@@ -128,3 +130,5 @@ p{
       animation-timing-function: ease-out;
     }
   }
+
+
