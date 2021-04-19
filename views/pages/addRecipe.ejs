@@ -2,52 +2,106 @@
 <link rel="stylesheet" href="/styles/main.css">
 
 <link rel="stylesheet" href="/styles/addRecipe.css">
-<body>
-    
-<main>
-    <div class="backDiv">
-    <img src="/images/addtest1.jpg" alt="" class="backgroundImage">
-    <div class="formDiv">
+
+  
+
+<!-- <main>
+    <img src="/images/test13.jpg" alt=""  style="z-index: -1;">
+    <div class="">
+    <img src="/images/addtest1.jpg" alt="" >
+    <div class="">
 
     <h2>Add Your Own Recipe</h2>
     <form action="/addedRecipes" method="POST">
-        <div class="fieldDiv">
+        <div class="">
         <label for="UserName" class="label0">Recipe Owner</label>
         <input type="text" name="UserName" class="input0">
     </div>
-    <div class="fieldDiv">
+    <div class="">
         <label for="RecipeName" class="label1">Recipe Name</label>
         <input type="text" name="RecipeName" class="input1">
     </div>
-    <div class="fieldDiv">
+    <div class="">
         <label for="RecipeDetails" class="label2">Recipe Instructions</label>
         <input type="text" name="RecipeDetails" class="input2">
     </div>
-    <div class="fieldDiv">
+    <div class="">
         <label for="img_url" class="label3">Add image</label>
         <input type="url" name="img_url" placeholder="Insert url" class="input3">
     </div>
         <button type="submit"> Add Recipe</button>
     </form>
-    <div class="backg">
-        <img src="/images/test13.jpg" alt="" class="backgroundImage" style="z-index: -1;">
-
-        
-        <%userRecipe.map(data=>{ %>
-            <div id="addedRecipies">
-
-        <h3><%= data.username   %>  </h3> 
-        <img src="<%= data.img_url   %> "/> 
-        <h4><%= data.recipename %>  </h4>
-        <p><%=  data.recipedetails   %> </p>
-    </div>
-        <% }); %>
+    
 </div>
+
+</div>
+<div class="">
+       
+        
+    <%userRecipe.map(data=>{ %>
+        <div id="">
+
+    <h3><%= data.username   %>  </h3> 
+    <img src="<%= data.img_url   %> "/> 
+    <h4><%= data.recipename %>  </h4>
+    <p><%=  data.recipedetails   %> </p>
+</div>
+    <% }); %>
+</div>
+
+    
+</main> -->
+
+
+
+<main> 
+    <img src="/images/test13.jpg" alt="" class="backgroundImage" style="z-index: -1;">
+    <div class="backDiv">
+    <img src="/images/addtest1.jpg" alt="" >
+    <div class="formDiv">
+
+    <h2>Add Your Own Recipe</h2>
+    <form action="/addedRecipes" method="POST">
+        <div class="fieldDiv">
+        <!-- <label for="UserName" class="label0">Recipe Owner</label> -->
+        <input type="text" name="UserName" class="input0" placeholder="Recipe Owner">
+    </div>
+    <div class="fieldDiv">
+        <!-- <label for="RecipeName" class="label1">Recipe Name</label> -->
+        <input type="text" name="RecipeName" class="input1" placeholder="Recipe Name">
+    </div>
+    <div class="fieldDiv">
+        <!-- <label for="RecipeDetails" class="label2">Recipe Instructions</label> -->
+        <input type="text" name="RecipeDetails" class="input2" placeholder="Recipe Instructions">
+    </div>
+    <div class="fieldDiv">
+        <!-- <label for="img_url" class="label3">Add image</label> -->
+        <input type="url" name="img_url" placeholder="Insert url" class="input3">
+    </div>
+        <button type="submit"> Add Recipe</button>
+    </form>
+    
+</div>
+
+</div>
+<div class="reslut">
+  
+    <div class="cardDiv">
+    <%userRecipe.map(data=>{ %>
+        <div id="">
+            <h2 class="text1"><%= data.recipename %>  </h2>
+
+    <h3 class="ingr"> Added By: <%= data.username   %>  </h3> 
+    <img src="<%= data.img_url   %> " class="imgDiv"/> 
+    <p class="text"><%=  data.recipedetails   %> </p>
+</div>
+    <% }); %>
 </div>
 
 </div>
 
     
-</main>
+</main> 
+
 </body>
 </html>

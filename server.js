@@ -19,7 +19,7 @@ server.use(express.static('./public'));
 server.use(methodOverride('_method'));
 server.use(express.urlencoded({ extended: true }));
 server.get('/', homePage);
-server.get('/searchByRecipe',searchByRecipe);
+server.get('/searchByRecipe',searchByRecipe); 
 server.post('/getSearchByRecipe',getSearchByRecipe);
 
 
