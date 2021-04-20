@@ -37,7 +37,9 @@ main{
 }
 .cardDiv 
 {
-    background: url("/images/test8.jpg");
+   
+    background: url("https://cdn.pixabay.com/photo/2016/02/25/15/55/texture-1222375_960_720.jpg");
+    /* background: url("/images/x.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,16 +87,23 @@ main{
         
     
 }
+.sum
+{
+    color: rgb(6, 78, 12);
+
+}
 .text
 {
     text-align: justify;
+    color: black;
+    font-weight: bold;
     
 }
 span
 {
     font-weight: bold;
     font-size: large;
-    color: #0A7029;
+    color: rgb(241, 239, 239);
     font-family: 'Domine', serif;
 
 }
@@ -103,7 +112,7 @@ span
     font-size: x-large;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #0A7029;
+    color:rgb(6, 78, 12);
     font-family: 'Domine', serif;
 
 }

@@ -1,6 +1,6 @@
-<%- include('./layout/header')  %> 
-<link rel="stylesheet" href="/styles/GuessStyle.css">
- 
+<%- include('./layout/header') %>
+    <link rel="stylesheet" href="/styles/GuessStyle.css">
+
     <main>
 
 
@@ -9,39 +9,43 @@
     width: 200px;
     border-radius: 22px;
 ">
+            
+            <br>
+            <br>
+
             <h3>Calories</h3>
             <p>
 
-                Min  : <%=dish.calories.min%> per 100g.
-                   
+                Min : <%=dish.calories.min%> per 100g.
+
             </p>
             <p>
-                Max  : <%=dish.calories.max%> per 100g
+                Max : <%=dish.calories.max%> per 100g
             </p>
             <br />
             <h3>Carbs</h3>
             <p>
-                Min carbs : <%=dish.carbs.min%> per 100g.
-                   
+                Min : <%=dish.carbs.min%> per 100g.
+
 
             </p>
-            <p> Max carbs <%=dish.protein.max%> per 100g.</p>
+            <p> Max : <%=dish.protein.max%> per 100g.</p>
             <br />
             <h3>Fat</h3>
             <p>
-                Min fat : <%=dish.protein.min%> per 100g.
-                  
+                Min : <%=dish.protein.min%> per 100g.
+
 
             </p>
-            <p>  Max fat : <%=dish.fat.max%> per 100g.</p>
+            <p> Max : <%=dish.fat.max%> per 100g.</p>
             <br />
             <h3>Protein</h3>
             <p>
-                Min protein : <%=dish.protein.min%> per 100g.
-                    
+                Min : <%=dish.protein.min%> per 100g.
+
 
             </p>
-            <p>Max protein : <%=dish.protein.max%> per 100g.</p>
+            <p>Max : <%=dish.protein.max%> per 100g.</p>
             <br />
             <br />
 
@@ -169,9 +173,9 @@
 
     </main>
 
-    <%- include('./layout/footer')  %> 
+    <%- include('./layout/footer') %>
 
-</body>
+        </body>
 
 
-</html>
+        </html>
