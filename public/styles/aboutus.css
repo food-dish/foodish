@@ -329,3 +329,7 @@ border-radius: 10px;
   transition: 0.4s all;
   cursor: pointer;
 }
+
+main{
+  height: 1vh;
+}

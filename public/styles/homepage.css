@@ -96,7 +96,7 @@ body{
 
  main img{
      width: 100%;
-     height: 75vh; 
+     height: 100vh; 
  }
  #slider{
      margin-top: 10px ;
@@ -104,12 +104,13 @@ body{
 
 .hh{
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 30px;
+    margin-top: 35px;
+    /* margin-bottom: 10px; */
     font-family: 'Lora', serif;
     /* font-family: 'Patrick Hand', cursive; */
     /* background-color: teal; */
     /* width: 35%; */
+    margin-left: 3px;
 }
 
 div span {
@@ -273,14 +274,14 @@ div span:last-child {
   
   .sec2
   {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
   
   #review {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 250px; */
+    margin-top: 50px;
   }
   
   .cardreview {
@@ -293,7 +294,7 @@ div span:last-child {
     margin: auto;
     background-color: #ffffff;
     border-radius: 25px;
-    box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 0 35px rgba(0, 0, 0, 0.5);
   }
   
   .cardreview .inner_part {
@@ -316,7 +317,7 @@ div span:last-child {
     overflow: hidden;
     flex-shrink: 0;
     border-radius: 20px;
-    box-shadow: 0 10px 50px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 30px rgba(0,0,0,0.2);
   }
   
   #slideImg:checked ~ .inner_part .img {
@@ -469,13 +470,16 @@ div span:last-child {
   position: absolute;
   width: 750px;
   /* height: 1000px; */
-  bottom: 500px;
-  color: rgb(231, 60, 7);
+  /* bottom: 500px; */
+  top: 50%;
+  left: 24%;
+  border-radius: 10px;
+  color: white;
   z-index: 1;
-  font-size: 72px;
+  font-size: 36px;
   background-color:rgba(0, 0, 0, 0.52);
   padding: 40px 20px;
-  /* font-family: 'Domine', serif; */
+  font-family: 'Domine', serif;
 
 
 }
