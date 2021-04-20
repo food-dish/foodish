@@ -33,14 +33,16 @@ main{
 }
 .containerForm{
     position:relative;
-    right: 70px;
-    bottom: 540px;
+    /* right: 70px; */
+    bottom: 622px;
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
     position: relative;
     animation: form 1s;
     font-family: 'Lora', serif;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,.7));
+    border-radius: 22px;
     /* animation: text-glow 2s ease-out infinite alternate; */
 
 
@@ -84,16 +86,17 @@ form  {
     }  
 
 form select{
+    margin: 19px auto;
+    display: block;
     width: 400px;
     height: 50px;
-    margin-left: 130px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    /* margin-left: 130px; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 30px; */
     border-radius: 5px;
     font-weight: bold;
     border: solid 2px #0A7029;
     font-family: 'Lora', serif;
-
 
 }
 form h4{
@@ -102,9 +105,9 @@ form h4{
     animation: text-glow 2s ease-out infinite alternate;
     font-size: xx-large;
     font-weight:bold;
-    margin-left: 130px;
+    /* margin-left: 130px;
     margin-bottom: 20px;
-        
+         */
 }
 
 
@@ -118,19 +121,19 @@ select option{
 }
 
 button{
-    background-color:  #0A7029;
-    border:solid 3px #0A7029;
+    display: block;
+    margin: 44px auto;
+    background-color: #0A7029;
+    border: solid 3px #0A7029;
     color: white;
-    width: 400px;
+    width: 200px;
     height: 50px;
-    margin-left: 130px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    /* margin-left: 130px; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 30px; */
     border-radius: 5px;
     font-weight: bold;
     font-family: 'Domine', serif;
-
-
 }
 
 @keyframes form {
