@@ -73,13 +73,15 @@ body img:nth-child(2){
     width: 400px;
     border: solid #0A7029;
     height: 60px;
-
+    font-family: 'Lora', serif;
     margin-bottom: 20px;
+    padding-left: 20px ;
 
 }
 .form form input
 {
   margin-bottom: 20px;
+  font-family: 'Lora', serif;
 
 width: 400px;
     /* width: 20%; */
@@ -97,6 +99,8 @@ width: 400px;
     color: white;
     border: solid #0A7029;
     height: 60px;
+    font-family: 'Domine', serif;
+
     
 }
 .h-3
@@ -165,11 +169,28 @@ h5
   margin:0px;
   font-size:1.4em;
   font-weight:700;
+  font-family: 'Domine', serif;
+
 }
 
 p
 {
   font-size:12px;
+  font-family: 'Lora', serif;
+
+}
+
+.formTitle{
+  color: #0A7029;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 200px;
+    /* margin-bottom: 20px; */
+    font-family: 'Domine', serif;
+    font-size: 40px;
+    text-transform: uppercase;
+
 }
 
 .center
