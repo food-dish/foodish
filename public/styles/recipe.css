@@ -40,6 +40,8 @@ main{
     margin: 0 auto;
     position: relative;
     animation: form 1s;
+    font-family: 'Lora', serif;
+
 
 }
 form input 
@@ -52,6 +54,8 @@ form input
     border-radius: 5px;
     font-weight: bold;
     border: solid 2px #0A7029;
+    font-family: 'Lora', serif;
+
 
 }
 form  {
@@ -59,6 +63,8 @@ form  {
     padding: 40px;
     /* margin: 50px 0; */
     border-radius: 40px;
+    font-family: 'Lora', serif;
+
     
   }
 
@@ -70,6 +76,8 @@ form  {
     text-transform: uppercase;
     font-weight: 700;
     text-align: center; 
+    font-family: 'Domine', serif;
+
     }  
 
 form select{
@@ -81,6 +89,8 @@ form select{
     border-radius: 5px;
     font-weight: bold;
     border: solid 2px #0A7029;
+    font-family: 'Lora', serif;
+
 
 }
 form h4{
@@ -100,6 +110,8 @@ select option{
     background-color: #d8f3dc;
     cursor: pointer;
     background-color: transparent;
+    font-family: 'Lora', serif;
+
 }
 
 button{
@@ -113,6 +125,8 @@ button{
     margin-bottom: 30px;
     border-radius: 5px;
     font-weight: bold;
+    font-family: 'Domine', serif;
+
 
 }
 

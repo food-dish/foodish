@@ -74,7 +74,7 @@ nav{
 nav ul{
 	display:flex;
 	margin-left: 250px;
-	font-family: 'Patrick Hand', cursive;
+	/* font-family: 'Patrick Hand', cursive; */
 }
 
 nav ul li{
