@@ -28,6 +28,7 @@ body
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  height: 100vh;
   
 }
 
@@ -331,6 +332,8 @@ border-radius: 10px;
   cursor: pointer;
 }
 
-main{
-  height: 1vh;
+#footer{
+  position: relative;
+  bottom: 30vh;
 }
+
