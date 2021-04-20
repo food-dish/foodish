@@ -146,14 +146,15 @@ button{
     background-color: #0A7029;
     border: solid 3px #0A7029;
     color: white;
-    width: 200px;
-    height: 50px;
+    width: 230px;
+    height: 45px;
     /* margin-left: 130px; */
     /* margin-top: 10px; */
     /* margin-bottom: 30px; */
     border-radius: 5px;
     font-weight: bold;
     font-family: 'Domine', serif;
+    font-size: medium;
 }
 
 @keyframes form {
