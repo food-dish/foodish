@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+main{
+
+    background-image: url("https://cdn.pixabay.com/photo/2017/02/15/10/38/background-2068215_960_720.jpg");
+     /* background-image: url("/images/Guess.jpg"); */
+     background-position:center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100vh;
+     width: 100%;
+}
+
+.Guess
+{
+    position: absolute;
+    top:50%;
+    left:60%;
+    font-family: 'Lora', serif;
+    animation: form 0.5s;
+  
+}
+legend
+{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #37c24a;
+    text-align: center;
+
+}
+input 
+{
+    width: 250px;
+    height: 45px;
+    font-weight: bold;
+    border: solid 2px #0A7029;
+    font-family: 'Lora', serif;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+}
+button
+{
+    background-color:  #0A7029;
+    border:solid 3px #0A7029;
+    color: white;
+    width: 250px;
+    height: 37px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Domine', serif;
+}
+
+
+@keyframes form {
+    0% {
+      left: 300%;
+      animation-timing-function: ease-in;
+    }
+  
+    30% {
+      left: 80%;
+      animation-timing-function: ease-out;
+    }
+  }
+
+  .reslut
+  {
+     text-align: center;
+      font-size: large;
+      color: orangered;
+      position: absolute;
+      top:25%;
+      left:50%;
+      
+  }

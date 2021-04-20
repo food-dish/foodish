@@ -1,37 +1,45 @@
-
+<%- include('./layout/header')  %> 
+<link rel="stylesheet" href="/styles/GuessStyle.css">
  
     <main>
 
 
         <div class="reslut">
-           
-                <p>
-                    
-                    <%=dish.calories.min%>
-                    <%=dish.calories.max%>
-                </p>
-                <br />
-                <p>
-                    <%=dish.carbs.min%>
-                    <%=dish.carbs.max%>
+            <h3>Calories</h3>
+            <p>
+
+                Min  : <%=dish.calories.min%> per 100g.
                    
-                </p>
-                <br />
-                <p>
-                    <%=dish.fat.min%>
-                    <%=dish.fat.max%>
-                
-                </p>
-                <br />
-                <p>
-                    <%=dish.protein.min%>
-                    <%=dish.protein.max%>
-              
-                </p>
-                <br />
-                <br />
-               
+            </p>
+            <p>
+                Max  : <%=dish.calories.max%> per 100g
+            </p>
+            <br />
+            <p>
+                Min carbs : <%=dish.carbs.min%> per 100g.
+                   
+
+            </p>
+            <p> Max carbs <%=dish.carbs.max%> per 100g.</p>
+            <br />
+            <p>
+                Min fat : <%=dish.fat.min%> per 100g.
+                  
+
+            </p>
+            <p>  Max fat : <%=dish.fat.max%> per 100g.</p>
+            <br />
+            <p>
+                Min protein : <%=dish.protein.min%> per 100g.
+                    
+
+            </p>
+            <p>Max protein : <%=dish.protein.max%> per 100g.</p>
+            <br />
+            <br />
+
         </div>
+
 
 
 
