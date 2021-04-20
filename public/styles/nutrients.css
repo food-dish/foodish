@@ -24,7 +24,7 @@ body{
 display: grid;
 grid-template-columns: 1fr;
 justify-content: center;
-margin-top: 2%;
+/* margin-top: 2%; */
 }
 body img:nth-child(2){
     z-index: -1;
