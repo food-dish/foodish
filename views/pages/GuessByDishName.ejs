@@ -1,13 +1,22 @@
-<%- include('./layout/header')  %> 
+<%- include('./layout/header') %>
+
+    <link rel="stylesheet" href="/styles/GuessStyle.css">
+
+    <body>
+        <main>
+
+            <form class="Guess" action="/GuessByDishNameres" method="POST">
+                <legend>Ingredient Box</legend>
+                <input type="text" name="Guess" placeholder="Enter Ingredient"><br><br>
+                <button type="submit">SHOW</button>
+
+            </form>
+        </main>
 
 
-    <form action="/GuessByDishNameres" method="POST">
-        <label for="Guess">Dish Name</label>
-        <input type="text" name="Guess" ><br><br>
-        <button type="submit">SHOW</button>
-    </form>
 
-</body>
-<%- include('./layout/footer')  %> 
-    </html>
-    
+
+    </body>
+    <%- include('./layout/footer') %>
+
+        </html>
