@@ -181,7 +181,7 @@ h5
 
 }
 
-p
+p:not(:last-child)
 {
   font-size:12px;
   font-family: 'Lora', serif;
