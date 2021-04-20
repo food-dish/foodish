@@ -13,6 +13,7 @@ footer
     height: 90px;
     font-family: 'Lora', serif;
     font-size: 16px;
+    color: white;
 }
 
 .footerli
@@ -32,7 +33,7 @@ footer
 div p {
      /* margin-top: 17px; */
     /* margin-right: 500px; */
-    color: rgb(0, 0, 0);
+    color:white
    
 }
 .imglogo img{
