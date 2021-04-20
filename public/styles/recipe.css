@@ -41,6 +41,8 @@ main{
     position: relative;
     animation: form 1s;
     font-family: 'Lora', serif;
+    /* animation: text-glow 2s ease-out infinite alternate; */
+
 
 
 }
@@ -64,6 +66,7 @@ form  {
     /* margin: 50px 0; */
     border-radius: 40px;
     font-family: 'Lora', serif;
+    
 
     
   }

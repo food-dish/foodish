@@ -1,6 +1,6 @@
 footer
 {
-    font-family: 'Domine', serif;
+    /* font-family: 'Domine', serif; */
     font-size: large;
     /* line-height: 2; */
     /* margin-top: 25px; */
@@ -9,11 +9,9 @@ footer
     justify-content:space-around;
     background-color: #0A7029;
     align-items: center;
-    height: 150px;
-    
-    
-    
-    
+    height: 90px;
+    font-family: 'Lora', serif;
+    font-size: 16px;
 }
 
 .footerli
@@ -36,8 +34,8 @@ div p {
    
 }
 .imglogo img{
-    width: 175px;
-    height: 90px;
+    width: 140px;
+    height: 60px;
     /* margin: 12px; */
     /* margin-left: 170px; */
     /* margin-top: 17px; */

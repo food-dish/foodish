@@ -496,15 +496,35 @@ div span:last-child {
 
 }
 
+hr {
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  width: 50%;
+  margin-left: 350px;
+}
+hr:before { /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
 
-*:before, *:after { content: ''; }
+/* *:before, *:after { content: ''; }
 hr {
   border: 0;
   margin: 1.35em auto;
   max-width: 100%;
   background-position: 50%;
   box-sizing: border-box;
-}
+} */
 /* .vertical-lines {
   height: 10px;
   color: orange;
