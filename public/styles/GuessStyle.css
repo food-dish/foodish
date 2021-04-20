@@ -17,17 +17,22 @@ main{
      width: 100%;
 }
 
+.Guess:hover{
+  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.5));
+}
 .Guess
 {
-    position: absolute;
-    top:50%;
-    left:57%;
-    font-family: 'Lora', serif;
-    animation: form 0.5s;
-    background-color: rgba(255, 255, 255, 0.288); 
-    padding: 47px; 
-    border-radius: 3px;
-    font-size: larger;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,.7));
+  
+  position: absolute;
+  top: 50%;
+  left: 57%;
+  font-family: 'Lora', serif;
+  animation: form 0.5s;
+  background-color: rgba(255, 255, 255, 0.288);
+  padding: 47px;
+  border-radius: 22px;
+  font-size: larger;
 }
 ::placeholder
 {
@@ -91,4 +96,8 @@ button
       top:25%;
       left:63%;
       
+  }
+
+  .reslut p{
+    color: rgb(239 230 165);
   }
