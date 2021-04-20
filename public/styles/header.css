@@ -26,6 +26,7 @@ header{
 	background-size: cover;
 	position: relative;
   overflow: hidden;
+  border-radius: 0 0 15px 15px;
 }
 
 .container{
