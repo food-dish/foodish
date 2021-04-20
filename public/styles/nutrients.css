@@ -16,7 +16,7 @@ body{
 .nutriForm{
   position: absolute;
   top: 300px;
-  right: 30%;
+  right: 33%;
   margin-bottom: 250px;
 
 }
@@ -96,7 +96,7 @@ width: 400px;
 
     border: 0;
     height: 34px;
-    width: 400px;
+    width: 200px;
     /* background-color: bisque; */
     border-radius: 10px;
     background-color: #0A7029;
@@ -126,10 +126,15 @@ width: 400px;
 
   
 /* } */
+
+form:hover{
+  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.5));
+}
+
 form{
-  background-color: rgba(255, 255, 255, 0.486);
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,.7));
   padding: 55px;
-  border-radius: 4px;
+  border-radius: 22px;
  
 }
 
@@ -199,6 +204,7 @@ p:not(:last-child)
     font-size: 40px;
     text-transform: uppercase;
     margin-top: 230px;
+    z-index: 333333;
 
 }
 

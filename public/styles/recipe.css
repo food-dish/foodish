@@ -31,7 +31,12 @@ main{
     opacity: .9; */
 
 }
-.containerForm{
+.containerForm:hover{
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.5));
+}
+.containerForm
+{
+    
     position:relative;
     /* right: 70px; */
     bottom: 622px;
@@ -50,11 +55,19 @@ main{
 }
 form input 
 {
+    height: 60px;
+  
+    padding-left: 15px;
+
+
+    font-size: x-large;
+    margin: 19px auto;
+    display: block;
     width: 400px;
-    height: 50px;
-    margin-left: 130px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+   
+    /* margin-left: 130px; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 30px; */
     border-radius: 5px;
     font-weight: bold;
     border: solid 2px #0A7029;
@@ -86,10 +99,17 @@ form  {
     }  
 
 form select{
+
+    height: 60px;
+  
+    padding-left: 15px;
+
+
+    font-size: x-large;
     margin: 19px auto;
     display: block;
     width: 400px;
-    height: 50px;
+   
     /* margin-left: 130px; */
     /* margin-top: 10px; */
     /* margin-bottom: 30px; */
