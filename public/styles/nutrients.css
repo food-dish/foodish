@@ -191,6 +191,8 @@ p:not(:last-child)
 {
   font-size:12px;
   font-family: 'Lora', serif;
+  color: black;
+  font-size: medium;
 
 }
 
