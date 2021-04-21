@@ -7,7 +7,7 @@ const pg = require('pg');
 const server = express();
 
 
-// const client = new pg.Client({ connectionString: process.env.DATABASE_URL,ssl: { rejectUnauthorized: false } });
+const client = new pg.Client({ connectionString: process.env.DATABASE_URL,ssl: { rejectUnauthorized: false } });
 
 const PORT = process.env.PORT || 5000;
 const superagent = require('superagent');
@@ -15,7 +15,7 @@ const methodOverride = require('method-override');
 const { request, response } = require('express');
 
 
-const client = new pg.Client(process.env.DATABASE_URL);
+// const client = new pg.Client(process.env.DATABASE_URL);
 server.use(cors());
 server.set('view engine', 'ejs');
 server.use(express.static('./public'));
