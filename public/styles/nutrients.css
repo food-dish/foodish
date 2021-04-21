@@ -213,13 +213,13 @@ p:not(:last-child)
 
 .center
 {
-  margin-top: 150px;
+  margin-top: 165px;
   width:100%;
   display: grid;
   
   align-items: center;
  
-    grid-template-columns: repeat(2,50%);
+    grid-template-columns: repeat(3,33%);
 }
 
 /* End Non-Essential  */
