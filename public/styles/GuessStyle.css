@@ -25,7 +25,7 @@ main{
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,.7));
   
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 57%;
   font-family: 'Lora', serif;
   animation: form 0.5s;
@@ -93,8 +93,14 @@ button
      text-align: center;
       font-size: large;
       position: absolute;
-      top:25%;
-      left:63%;
+      top:20%;
+      left:60%;
+      background-color: rgba(0, 0, 0, 0.486);
+      border-radius: 5px;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+
       
   }
 
