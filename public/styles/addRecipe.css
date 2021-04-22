@@ -12,7 +12,7 @@ body{
 
 }
 h2{
-    /* margin-left: 590px; */
+   
     margin-top: 20px;
     margin-bottom: 40px;
     font-weight: bold;
@@ -40,12 +40,7 @@ form{
     transform: translate(44%, 50%);
     font-weight: bold;
 }
-/* .backDiv{
-    background-size: cover;
-    background-position: center;
 
-
-} */
 .fieldDiv{
     display: flex;
     flex-direction: row;
@@ -69,9 +64,7 @@ button{
     font-size: medium;
 
 }
-/* .fieldDiv input{
-    margin-left: 50px;
-} */
+
 .fieldDiv .input0{
    
     height: 50px;
@@ -242,37 +235,6 @@ main{
     /* border-radius: 50px; */
     /* border-color: #737975; */
     transition: box-shadow 0.2s ease-in-out;
-    
-
-    
-    
-      /*background: linear-gradient(124deg, #D8F3DC, #B7E4C7, #95D5B2, #74C69D, #52B788, #52B788, #D8F3DC, #74C69D, #74C69D);
-    background-size: 1800% 1800%;
-    -webkit-animation: rainbow 7s ease infinite;
-    -z-animation: rainbow 7s ease infinite;
-    -o-animation: rainbow 7s ease infinite;
-      animation: rainbow 7s ease infinite;}
-    @-webkit-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @-moz-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @-o-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%} */
-        
-    
 }
 
 .ingr

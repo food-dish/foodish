@@ -50,12 +50,7 @@ function getSearchByRecipe(req,res)
 
           let formattedResutl = result.map(searchByRecipe => {
              console.log(searchByRecipe.summary.toString().replace(/(<([^>]+)>)/ig, " "));
-           
-            // // this.summary=searchByRecipe.summary.toString().replace(/(<([^>]+)>)/, "");
-            // // this.instruction=searchByRecipe.analyzedInstructions[0].steps.map(data=>{return data.step});
-            
                return new SearchByRecipe(searchByRecipe)
-            
               
           });
 
@@ -64,8 +59,6 @@ function getSearchByRecipe(req,res)
        res.end();
       })
       .catch(e => { throw Error('Cannot get data from the API') })
-
-
 }
 
 function aboutus(req,res){
@@ -91,7 +84,6 @@ function SearchByRecipe(searchByRecipe)
 
 
 }
-//////////////////////////////////////////////////////////////yasmeen
 
 server.post('/nutrition', recipeByNutrients)
 server.post('/addedRecipes', addRecipes)
@@ -105,7 +97,6 @@ let SQL = `select * from addedRecipies ; `;
 client.query(SQL)
 .then(results=>{
   response.render('pages/addRecipe', {userRecipe: results.rows})
-  
 })
 
 })
@@ -119,20 +110,15 @@ function recipeByNutrients (request, response){
   superagent.get(URL)
   .then(results=>{
     let apiData = results.body;
-    
-
           let formattedResult2 = apiData.map(element => {
 
                return new Nutrient(element)
               
           });
 
-     
-      // response.render('pages/renderNutrients.ejs', { nutrients: formattedResult2 });
        response.render('pages/nutrientsPage.ejs', { nutrients: formattedResult2 });
   })
 }
-
 function Nutrient(data){
   this.title = data.title;
   this.image = data.image;
@@ -153,93 +139,6 @@ client.query(SQL, safeValues)
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-///////////////////////////////////////////sewar
-
 server.post('/GuessByDishNameres', Guess);
 server.get('/GuessByDishName', (req,res)=>{
   res.render('pages/GuessByDishName')
@@ -258,24 +157,6 @@ function Guess(req,res)
       .then(response => {
 
          let result = response.body;
-        
-        
-       
-       
-          // let formattedResutl = result.map(searchByDish => {
-
-             //  return   new GuessDish(result); 
-                
-          //   });
-
-        
-          
-           
-          
-         
-     
-       
-          
      
      res.render('pages/showGuess', { dish: new GuessDish(result) });
       // console.log(formattedResutl);
