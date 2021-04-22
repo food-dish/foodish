@@ -2,7 +2,6 @@ body{
     position: relative;
 }
 .form{
-  /* background-image: url("/images/test2.jpg"); */
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,10 +60,7 @@ body img:nth-child(2){
     margin-bottom: 2%;
     display: flex;
     flex-direction: column;
-    /* background-image: url("https://images.pexels.com/photos/4033005/pexels-photo-4033005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
+
 }
 .form form select,.form form input
 {
@@ -244,12 +240,7 @@ p:not(:last-child)
   overflow:hidden;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 1), 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
 
-  /* -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff; */
 }
-/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
-
-/* Top Half of card, image. */
 
 .property-image
 {
@@ -261,12 +252,10 @@ p:not(:last-child)
   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  /* background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg'); */
   background-size:cover;
   background-repeat:no-repeat;
 }
 
-/* Bottom Card Section */
 
 .property-description> *
 {
@@ -328,24 +317,6 @@ p:not(:last-child)
 }
 
 
-/* Optional
-
-.property-image-title
-{
-text-align:center;
-position:Relative;
-top:30%;
-opacity:0;
-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-color:black;
-font-size:1.2em;
-}
-
-.property-card:hover .property-image-title
-{
-opacity:1;
-}
-*/ 
 
 .phh{
   color: #000;

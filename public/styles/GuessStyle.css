@@ -9,7 +9,6 @@ body{
 main{
 
     background-image: url("https://cdn.pixabay.com/photo/2017/02/15/10/38/background-2068215_960_720.jpg");
-     /* background-image: url("/images/Guess.jpg"); */
      background-position:center;
      background-repeat: no-repeat;
      background-size: cover;

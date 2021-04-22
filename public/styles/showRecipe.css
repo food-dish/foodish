@@ -15,8 +15,6 @@ main{
     display: flex;
     flex-direction: row;
     width: 100%;
-    /* background-image: url("https://images.pexels.com/photos/6496462/pexels-photo-6496462.jpeg?cs=srgb&dl=pexels-jana-kukebal-6496462.jpg&fm=jpg"); */
-    /* background-image: url("https://cdn.pixabay.com/photo/2016/03/27/07/32/clouds-1282314_960_720.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,35 +53,8 @@ main{
     border-color: transparent;
     transition: box-shadow 0.2s ease-in-out;
     
-
-    
-    
      box-shadow: 0 0 8px 0 rgb(17 22 26 / 16%),0 4px 8px 0 rgb(17 22 26 / 8%), 0 8px 16px 0 rgb(17 22 26 / 8%);
-    /*background: linear-gradient(124deg, #D8F3DC, #B7E4C7, #95D5B2, #74C69D, #52B788, #52B788, #D8F3DC, #74C69D, #74C69D);
-    background-size: 1800% 1800%;
-    -webkit-animation: rainbow 7s ease infinite;
-    -z-animation: rainbow 7s ease infinite;
-    -o-animation: rainbow 7s ease infinite;
-      animation: rainbow 7s ease infinite;}
-    @-webkit-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @-moz-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @-o-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%} */
+
         
     
 }
